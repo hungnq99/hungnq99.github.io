@@ -1,0 +1,22 @@
+{
+  "name": "bread",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theCodography/theCodography.github.io.git"
+  },
+  "author": "HungQ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theCodography/theCodography.github.io/issues"
+  },
+  "homepage": "https://github.com/theCodography/theCodography.github.io#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
