@@ -1,1 +1,54 @@
-@import './Base/base'
+@import './Base/base';
+
+
+a {
+    text-decoration: none;
+}
+.wrapper {
+    min-width: 1440px;
+    margin: 0 auto;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1210px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.header {
+    background-image: linear-gradient(to right bottom, rgba(238, 141, 36, .8), rgba(226, 99, 16, .8)),
+    url(../resources/img/background.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    padding-top: 4rem;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__menu {
+        &-list {
+            display: flex;
+        }
+        &-item {
+            margin-left: 5rem;
+            font-size: 1.8rem;
+            
+        }
+        &-link {
+            color: black;
+        }
+    }
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: 700;
+    color: black;
+    &__text{
+        color: #e26310;
+    }
+    
+}

@@ -2,13 +2,18 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 html{
     font-family: 'Syne', sans-serif;
-    font-size: 20px;
+    font-size: 62.5%;
     color: #5a5a5a;
     background-color: #ffffff;
-    text-rendering: optimizeLegibility;
-    
+    text-rendering: optimizeLegibility;    
+}
+
+img {
+    display: block;
+    max-width: 100%;
 }
