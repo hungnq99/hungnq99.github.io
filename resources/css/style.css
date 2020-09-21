@@ -35,11 +35,12 @@ a {
 }
 
 .header {
-  background-image: linear-gradient(to right bottom, rgba(238, 141, 36, 0.8), rgba(226, 99, 16, 0.8)), url(../resources/img/background.jpg);
+  background-image: linear-gradient(to right bottom, rgba(248, 212, 150, 0.5), rgba(226, 99, 16, 0.5)), url(../img/back2.jpg);
   background-size: cover;
-  background-position: top;
+  background-position: center;
   position: relative;
   padding-top: 4rem;
+  height: 80vh;
 }
 .header__inner {
   display: flex;
@@ -54,13 +55,62 @@ a {
   font-size: 1.8rem;
 }
 .header__menu-link {
-  color: black;
+  color: white;
+}
+
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.btn:link, .btn:visited {
+  text-transform: uppercase;
+  padding: 2rem 4rem;
+  display: inline-block;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 3rem;
+}
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10rem;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.btn-white {
+  color: #777777;
+  background-color: #fff;
+}
+.btn-white::after {
+  background-color: #fff;
+}
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
+}
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.btn:active {
+  outline: none;
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .logo {
   font-size: 3rem;
   font-weight: 700;
-  color: black;
+  color: white;
 }
 .logo__text {
   color: #e26310;
