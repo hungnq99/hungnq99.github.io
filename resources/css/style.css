@@ -1,9 +1,69 @@
 *, *::before, *::after {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 html {
-    font-family: 'Syne', sans-serif;
+  font-family: "Syne", sans-serif;
+  font-size: 62.5%;
+  color: #5a5a5a;
+  background-color: #ffffff;
+  text-rendering: optimizeLegibility;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  min-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1210px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.header {
+  background-image: linear-gradient(to right bottom, rgba(238, 141, 36, 0.8), rgba(226, 99, 16, 0.8)), url(../resources/img/background.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  padding-top: 4rem;
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__menu-list {
+  display: flex;
+}
+.header__menu-item {
+  margin-left: 5rem;
+  font-size: 1.8rem;
+}
+.header__menu-link {
+  color: black;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: 700;
+  color: black;
+}
+.logo__text {
+  color: #e26310;
+}
+
+/*# sourceMappingURL=style.css.map */
