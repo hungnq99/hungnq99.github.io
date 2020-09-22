@@ -7,6 +7,7 @@ a {
 .wrapper {
     min-width: 1440px;
     margin: 0 auto;
+    
 }
 .container {
     margin: 0 auto;
@@ -16,13 +17,9 @@ a {
 }
 
 .header {
-    background-image: linear-gradient(to right bottom, rgba(248, 212, 150, .5), rgba(226, 99, 16, .5)),
-    url(../img/back2.jpg);
-    background-size: cover;
-    background-position: center;
     position: relative;
     padding-top: 4rem;
-    height: 80vh;
+    padding-bottom: 2rem;
     &__inner {
         display: flex;
         align-items: center;
@@ -39,7 +36,7 @@ a {
             
         }
         &-link {
-            color: white;
+            color: black;
         }
     }
 }
@@ -98,9 +95,21 @@ a {
 .logo {
     font-size: 3rem;
     font-weight: 700;
-    color: white;
+    color: black;
     &__text{
         color: #e26310;
     }
     
+}
+
+.banner {
+    background-image: linear-gradient(rgba(226, 99, 16, .6), rgba(248, 212, 150, .6)),
+    url(/resources/img/carrot-cake-Recipe-new.jpg);    
+    width: 90%;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+    height: 80vh;
 }
