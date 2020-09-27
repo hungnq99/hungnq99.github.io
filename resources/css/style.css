@@ -36,8 +36,8 @@ a {
 
 .header {
   position: relative;
-  padding-top: 4rem;
-  padding-bottom: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .header__inner {
   display: flex;
@@ -63,15 +63,30 @@ a {
   text-align: center;
 }
 
+.btn {
+  font-size: 2rem;
+}
 .btn:link, .btn:visited {
   text-transform: uppercase;
-  padding: 2rem 4rem;
+  padding: 2rem 3rem;
   display: inline-block;
-  border-radius: 100px;
+  border-radius: 0.5rem;
   font-weight: 600;
-  font-size: 3rem;
 }
 .btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  right: 4px;
+  border-radius: 0.5rem;
+  border: 2px solid white;
+  z-index: 2;
+  transition: all 0.4s;
+}
+.btn::before {
   content: "";
   display: inline-block;
   height: 100%;
@@ -79,26 +94,35 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 10rem;
+  border-radius: 0.5rem;
   z-index: -1;
   transition: all 0.4s;
 }
-.btn-white {
-  color: #777777;
-  background-color: #fff;
+.btn-orange {
+  color: white;
+  background-color: #f5761a;
+  position: relative;
 }
-.btn-white::after {
-  background-color: #fff;
+.btn-orange::before {
+  background-color: #e26310;
 }
-.btn:hover {
+.btn-orange:hover {
   transform: translateY(-0.3rem);
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
 }
-.btn:hover::after {
+.btn-animated {
+  font-size: 3rem;
+}
+.btn-animated:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
+}
+.btn-animated:hover::before {
+  background-color: #ee8d24;
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }
-.btn:active {
+.btn-animated:active {
   outline: none;
   transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
@@ -115,12 +139,150 @@ a {
 
 .banner {
   background-image: linear-gradient(rgba(226, 99, 16, 0.6), rgba(248, 212, 150, 0.6)), url(/resources/img/carrot-cake-Recipe-new.jpg);
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   background-size: cover;
   background-position: center;
   position: relative;
+  margin-bottom: 6rem;
   height: 80vh;
+  background-attachment: fixed;
+}
+
+.begin__list {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  margin-bottom: 6rem;
+}
+.begin__item {
+  width: calc(33.3% - 4rem);
+  position: relative;
+  cursor: pointer;
+  border-radius: 5rem;
+}
+.begin__item:hover .overlay {
+  opacity: 0.8;
+}
+.begin__img {
+  background-size: cover;
+  width: 100%;
+  height: 23rem;
+  border-radius: 5rem;
+}
+.begin__img--1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(../img/background.jpg);
+}
+.begin__img--2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(../img/back1.jpg);
+}
+.begin__img--3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(../img/isabela-kronemberger-LxQ0BB10KbQ-unsplash.jpg);
+}
+.begin__caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.overlay {
+  position: absolute;
+  opacity: 0;
+  background-color: #e26310;
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  border-radius: 5rem;
+}
+
+.story {
+  background-color: #ececec;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  width: 95%;
+  margin: 0 auto;
+}
+.story__img {
+  width: 48%;
+}
+.story__img--list {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  padding: 5rem;
+  margin-left: 4rem;
+}
+.story__img--item {
+  width: 100%;
+  padding: 5px;
+}
+.story__img--item-1 {
+  background-image: url(../img/vincent-toesca-zSCOH0_iOZ4-unsplash.jpg);
+}
+.story__img--item-2 {
+  background-image: url(../img/vincent-toesca-zSCOH0_iOZ4-unsplash.jpg);
+}
+.story__img--item-3 {
+  background-image: url(../img/vincent-toesca-zSCOH0_iOZ4-unsplash.jpg);
+}
+.story__img--image {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 60vh;
+}
+.story__content {
+  width: 48%;
+  text-align: center;
+  margin-right: 4rem;
+}
+.story__content--title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  letter-spacing: 3px;
+  color: black;
+}
+.story__content--detail {
+  margin-bottom: 2rem;
+}
+.story-background {
+  position: relative;
+}
+.story-background__img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(../img/isabela-kronemberger-LxQ0BB10KbQ-unsplash.jpg);
+  background-size: cover;
+  width: 95%;
+  height: 60vh;
+  background-position: center;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+.story-background__caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.menu {
+  background-color: #ececec;
+  font-size: 2rem;
+  width: 95%;
+  margin: 0 auto;
+  height: 100vh;
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */

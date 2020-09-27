@@ -18,8 +18,8 @@ a {
 
 .header {
     position: relative;
-    padding-top: 4rem;
-    padding-bottom: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     &__inner {
         display: flex;
         align-items: center;
@@ -48,16 +48,30 @@ a {
     text-align: center;
 }
 .btn{
+    font-size: 2rem;
     &:link,
     &:visited {
         text-transform: uppercase;
-        padding: 2rem 4rem;
+        padding: 2rem 3rem;
         display: inline-block;
-        border-radius: 100px;
+        border-radius: .5rem;
         font-weight: 600;
-        font-size: 3rem;
+        
     }
     &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        bottom: 4px;
+        right: 4px;
+        border-radius: .5rem;
+        border: 2px solid white;
+        z-index: 2;
+        transition: all .4s;
+    }
+    &::before {
         content: "";
         display: inline-block;
         height: 100%;
@@ -65,32 +79,41 @@ a {
         position: absolute;
         top: 0;
         left: 0;
-        border-radius: 10rem;
+        border-radius: .5rem;
         z-index: -1;
-        transition: all .4s;
-    }
-    &-white{
-        color: #777777;
-        background-color: #fff;
-
-        &::after {
-            background-color: #fff;
+        transition: all 0.4s;
+      }
+    &-orange{
+        color: white;
+        background-color: #f5761a;
+        position: relative;
+        &::before {
+            background-color: #e26310;
+        }
+        &:hover {
+            transform: translateY(-.3rem);
+            box-shadow: 0 .5rem 2rem rgba($color: #000000, $alpha: .2);
         }
     }
-    &:hover {
-        transform: translateY(-.3rem);
-        box-shadow: 0 .5rem 2rem rgba($color: #000000, $alpha: .2);
-        &::after {
-            transform: scaleX(1.4) scaleY(1.6);
-            opacity: 0;
+    &-animated {
+        font-size: 3rem;
+        &:hover {
+            transform: translateY(-.3rem);
+            box-shadow: 0 .5rem 2rem rgba($color: #000000, $alpha: .2);
+            &::before {
+                background-color: #ee8d24;
+                transform: scaleX(1.4) scaleY(1.6);
+                opacity: 0;
+            }
+        }
+    
+        &:active {
+            outline: none;
+            transform: translateY(-.1rem);
+            box-shadow: 0 .5rem 1rem rgba($color: #000000, $alpha: .2);
         }
     }
-
-    &:active {
-        outline: none;
-        transform: translateY(-.1rem);
-        box-shadow: 0 .5rem 1rem rgba($color: #000000, $alpha: .2);
-    }
+    
 }
 .logo {
     font-size: 3rem;
@@ -98,18 +121,166 @@ a {
     color: black;
     &__text{
         color: #e26310;
-    }
-    
+    } 
 }
 
 .banner {
     background-image: linear-gradient(rgba(226, 99, 16, .6), rgba(248, 212, 150, .6)),
     url(/resources/img/carrot-cake-Recipe-new.jpg);    
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     background-size: cover;
     background-position: center;
     position: relative;
-    
+    margin-bottom: 6rem;
     height: 80vh;
+    background-attachment: fixed;
+}
+
+.begin {
+    &__list {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        margin-bottom: 6rem;
+    }
+
+    &__item {
+        width: calc(33.3% - 4rem);
+        position: relative;
+        cursor: pointer;
+        border-radius: 5rem;
+        &:hover .overlay{    
+            opacity: 0.8;  
+        }
+    }
+
+    &__img {
+        &--1 {
+            background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.2)),url(../img/background.jpg);
+        }
+        &--2 {
+            background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.2)),url(../img/back1.jpg);
+        }
+        &--3 {
+            background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.2)),url(../img/isabela-kronemberger-LxQ0BB10KbQ-unsplash.jpg);
+        }
+        background-size: cover;
+        width: 100%;
+        height: 23rem;
+        border-radius: 5rem;
+        
+    }
+    &__caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 3rem;
+        font-weight: 700;
+        
+    }
+   
+}
+
+.overlay {
+    position: absolute;
+    opacity: 0;
+    background-color:  #e26310;
+    height: 100%;
+    width: 100%;
+    transition: all .4s;
+    border-radius: 5rem;
+}
+.story {
+   background-color: #ececec;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 2rem;
+   width: 95%;
+   margin: 0 auto;
+
+    &__img {
+        width: 48%;
+        &--list {
+            display: flex;
+            align-items: stretch;
+            width: 100%;
+            padding: 5rem;
+            margin-left: 4rem;
+        }
+        &--item {
+            width: 100%;
+            padding: 5px;
+            &-1 {
+                background-image: url(../img/vincent-toesca-zSCOH0_iOZ4-unsplash.jpg);
+            }
+            &-2 {
+                background-image: url(../img/vincent-toesca-zSCOH0_iOZ4-unsplash.jpg);
+            }
+            &-3 {
+                background-image: url(../img/vincent-toesca-zSCOH0_iOZ4-unsplash.jpg);
+                
+            }
+        }
+
+        &--image {
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 60vh;
+        }
+    }
+    &__content {
+        width: 48%;
+        text-align: center;
+        margin-right: 4rem;
+        &--title {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 4rem;
+            margin-bottom: 2rem;
+            letter-spacing: 3px;
+            color: black;
+        }
+        &--detail {
+            margin-bottom: 2rem;
+        }
+    }
+    &-background {   
+        position: relative;
+        &__img {
+            background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.2)),
+            url(../img/isabela-kronemberger-LxQ0BB10KbQ-unsplash.jpg);
+            background-size: cover;
+            width: 95%;
+            height: 60vh;
+            background-position: center;
+            margin: 0 auto;
+            margin-bottom: 6rem;
+        }
+        &__caption {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 2.4rem;
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+
+    
+  }
+
+.menu {
+    background-color:  #ececec;
+    font-size: 2rem;
+    width: 95%;
+    margin: 0 auto;
+    height: 100vh;
+    display: block;
 }
