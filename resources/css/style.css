@@ -6,7 +6,7 @@
 }
 
 html {
-  font-family: "Syne", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 62.5%;
   color: #5a5a5a;
   background-color: #ffffff;
@@ -18,6 +18,37 @@ img {
   max-width: 100%;
 }
 
+label {
+  font-size: 10rem;
+  font-family: "Tangerine", cursive;
+  color: #f5761a;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 4rem;
+  letter-spacing: 3px;
+  color: black;
+  padding-bottom: 30px;
+}
+
+.menu-dot-line {
+  border-bottom: 2px dotted #E67E22;
+  height: 31px;
+  overflow: hidden;
+  display: block;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.col-md-6 {
+  width: 50%;
+  float: left;
+}
+
 a {
   text-decoration: none;
 }
@@ -25,6 +56,11 @@ a {
 .wrapper {
   min-width: 1440px;
   margin: 0 auto;
+}
+
+.wrapperr {
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .container {
@@ -242,14 +278,6 @@ a {
   text-align: center;
   margin-right: 4rem;
 }
-.story__content--title {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 4rem;
-  margin-bottom: 2rem;
-  letter-spacing: 3px;
-  color: black;
-}
 .story__content--detail {
   margin-bottom: 2rem;
 }
@@ -264,6 +292,7 @@ a {
   background-position: center;
   margin: 0 auto;
   margin-bottom: 6rem;
+  background-attachment: fixed;
 }
 .story-background__caption {
   position: absolute;
@@ -283,6 +312,49 @@ a {
   margin: 0 auto;
   height: 100vh;
   display: block;
+  padding-top: 5rem;
+  text-align: center;
+}
+.menu__image {
+  float: left;
+  width: 23%;
+}
+.menu__image img {
+  padding: 5px 5px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.menu__description {
+  float: left;
+  padding-left: 4%;
+  width: 73%;
+}
+.menu__description--list h5 {
+  font-size: 20px;
+  line-height: 24px;
+  vertical-align: bottom;
+  font-weight: 700;
+  float: left;
+  letter-spacing: 2px;
+  max-width: 70%;
+  padding-right: 12px;
+  margin: 12px 0 10px 0;
+}
+.menu__description--list p.price {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  display: inline-block;
+  vertical-align: bottom;
+  float: right;
+  padding-top: 17px;
+  padding-left: 12px;
+  margin-bottom: 5px;
+}
+.menu__description--content {
+  display: block;
+  clear: both;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

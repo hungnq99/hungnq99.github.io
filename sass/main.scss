@@ -9,6 +9,10 @@ a {
     margin: 0 auto;
     
 }
+.wrapperr {
+    display: inline-block;
+    margin-bottom: 20px;
+}
 .container {
     margin: 0 auto;
     max-width: 1210px;
@@ -237,14 +241,6 @@ a {
         width: 48%;
         text-align: center;
         margin-right: 4rem;
-        &--title {
-            text-transform: uppercase;
-            font-weight: 700;
-            font-size: 4rem;
-            margin-bottom: 2rem;
-            letter-spacing: 3px;
-            color: black;
-        }
         &--detail {
             margin-bottom: 2rem;
         }
@@ -260,6 +256,7 @@ a {
             background-position: center;
             margin: 0 auto;
             margin-bottom: 6rem;
+            background-attachment: fixed;
         }
         &__caption {
             position: absolute;
@@ -283,4 +280,52 @@ a {
     margin: 0 auto;
     height: 100vh;
     display: block;
+    padding-top: 5rem;
+    text-align: center;
+    &__image {
+        float: left;
+        width: 23%;
+    }
+    &__image img {
+        padding: 5px 5px;
+        background-color: #fff;
+        border-radius: 50%;
+        
+    }
+
+    &__description {
+        float: left;
+        padding-left: 4%;
+        width: 73%;
+        &--list h5 {
+            font-size: 20px;
+            line-height: 24px;
+            vertical-align: bottom;
+            font-weight: 700;
+            float: left;
+            letter-spacing: 2px;
+            max-width: 70%;
+            padding-right: 12px;
+            margin: 12px 0 10px 0;
+        }
+        &--list p.price {
+            font-size: 18px;
+            line-height: 18px;
+            font-weight: 700;
+            display: inline-block;
+            vertical-align: bottom;
+            float: right;
+            padding-top: 17px;
+            padding-left: 12px;
+            margin-bottom: 5px;
+        }
+
+        &--content {
+            display: block;
+            clear: both;
+            width: 100%;
+        }
+    }
 }
+
+

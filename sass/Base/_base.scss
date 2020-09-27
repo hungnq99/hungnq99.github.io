@@ -6,7 +6,7 @@
 }
 
 html{
-    font-family: 'Syne', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 62.5%;
     color: #5a5a5a;
     background-color: #ffffff;
@@ -16,4 +16,34 @@ html{
 img {
     display: block;
     max-width: 100%;
+}
+
+label {
+    font-size: 10rem;
+    font-family: 'Tangerine', cursive;
+    color: #f5761a;
+}
+h3 {
+    text-transform: uppercase;
+    font-weight: 700;    
+    font-size: 4rem;
+    letter-spacing: 3px;
+    color: black;
+    padding-bottom: 30px;
+}
+
+.menu-dot-line {
+    border-bottom: 2px dotted #E67E22;
+    height: 31px;
+    overflow: hidden;
+    display: block;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.col-md-6 {
+    width: 50%;
+    float: left;
 }
