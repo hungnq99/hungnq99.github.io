@@ -167,7 +167,7 @@ a {
             background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.2)),url(../img/back1.jpg);
         }
         &--3 {
-            background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.2)),url(../img/isabela-kronemberger-LxQ0BB10KbQ-unsplash.jpg);
+            background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.2)),url(../img/carrot2.jpg);
         }
         background-size: cover;
         width: 100%;
@@ -222,10 +222,10 @@ a {
                 background-image: url(../img/vincent-toesca-zSCOH0_iOZ4-unsplash.jpg);
             }
             &-2 {
-                background-image: url(../img/vincent-toesca-zSCOH0_iOZ4-unsplash.jpg);
+                background-image: url(../img/rebecca-hansen-_WpB9l8_Kn4-unsplash.jpg);
             }
             &-3 {
-                background-image: url(../img/vincent-toesca-zSCOH0_iOZ4-unsplash.jpg);
+                background-image: url(../img/carrot.jpg);
                 
             }
         }
@@ -325,6 +325,76 @@ a {
             width: 100%;
         }
     }
+}
+
+.partner {
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    &__img{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 4rem;
+    }
+    &__img img {
+        width: 24rem;
+    }
+}
+
+.footer {
+    background-color: #191919;
+    width: 95%;
+    margin: 0 auto;
+    height: 63vh;
+    padding: 10rem;
+    font-size: 1.8rem;
+    color: white;
+    line-height: 3rem;
+    &__item {
+        width: calc(33.3% - 7rem);
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        margin-bottom: 3rem;
+    }
+    &__logo {
+        color: white;
+        font-style: 3rem;
+    }
+    &__about a {
+        color: white;
+    }
+    &__end {
+        border-top: white 1px solid;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2rem;
+        text-align: left;
+        font-size: 1.5rem;
+        &--item {
+            width: calc(33.3% - 2rem);
+        }
+        
+    }
+
+    &__social {
+        letter-spacing: 5px;
+        &--icon {
+            font-size: 2.4rem;
+            letter-spacing: 2rem;
+            color: white;
+            &:hover {
+                color: #f5761a;
+            }
+        }
+    }
+    
 }
 
 

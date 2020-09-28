@@ -10,7 +10,8 @@ html{
     font-size: 62.5%;
     color: #5a5a5a;
     background-color: #ffffff;
-    text-rendering: optimizeLegibility;    
+    text-rendering: optimizeLegibility; 
+    scroll-behavior: smooth;   
 }
 
 img {
@@ -31,7 +32,12 @@ h3 {
     color: black;
     padding-bottom: 30px;
 }
-
+h4 {
+    text-transform: uppercase;
+    font-weight: 700;    
+    font-size: 3rem;
+    padding-bottom: 30px;
+}
 .menu-dot-line {
     border-bottom: 2px dotted #E67E22;
     height: 31px;
@@ -46,4 +52,8 @@ h3 {
 .col-md-6 {
     width: 50%;
     float: left;
+}
+
+.fa-angle-double-up {
+    font-size: 1.8rem;
 }
