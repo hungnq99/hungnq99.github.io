@@ -57,3 +57,62 @@ h4 {
 .fa-angle-double-up {
     font-size: 1.8rem;
 }
+.head {
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    transition: all .4s;
+    padding-bottom: 3rem;
+    z-index: 99;
+}
+.sticky {
+    background-color: rgba($color: #fff, $alpha: 0.8);
+    width: 100%;
+    padding-bottom: 3rem;
+    padding-top: 0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    transition: all .4s;
+    z-index: 99;
+}
+.sticky .logo {
+    margin-top: 2.4rem;
+}
+.sticky .header__menu{
+    margin-top: 2.4rem;
+}
+// 
+h1 {
+    font-size: 200px;
+}
+@keyframes moveInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-3rem); }
+    80% {
+      transform: translateX(1rem); }
+    100% {
+      opacity: 1;
+      transform: translateX(0); } 
+}
+  
+@keyframes moveInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(3rem); }
+    80% {
+      transform: translateX(-1rem); }
+    100% {
+      opacity: 1;
+      transform: translateX(0); } 
+}
+  
+@keyframes moveInBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(10rem); }
+    100% {
+      opacity: 1;
+      transform: translateY(0); } 
+}
