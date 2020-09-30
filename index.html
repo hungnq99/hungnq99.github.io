@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:image"
         content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fruktur&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="vendor/css/bootstrap-grid.css">
+    <!-- <link rel="stylesheet" href="vendor/css/bootstrap.css"> -->
+    <link rel="stylesheet" type="text/css" href="vendor/css/bootstrap.min.css">
     <link href="vendor/css/all.css" rel="stylesheet">
-
     <link rel="stylesheet" href="resources/css/reset.css">
-    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
     <title>CarrotNBunny</title>
 
 </head>
@@ -36,20 +36,23 @@
                                 <a href="#header" class="header__menu-link">Home</a>
                             </li>
                             <li class="header__menu-item">
-                                <a href="#story" class="header__menu-link">About</a>
+                                <a href="about.html" class="header__menu-link">About</a>
                             </li>
                             <li class="header__menu-item">
-                                <a href="#" class="header__menu-link">Shop</a>
+                                <a href="menu.html" class="header__menu-link">Menu</a>
                             </li>
                             <li class="header__menu-item">
-                                <a href="#" class="header__menu-link">Blog</a>
+                                <a href="gallery.html" class="header__menu-link">Gallery</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="contact.html" class="header__menu-link">Contact</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </header>
-    </div>
+    
 
     <section class="banner">
         <div class="text-box">
@@ -106,7 +109,7 @@
     </section>
 
     <section class="story" id="story">
-
+        <div class="story__item" id="story__item-1">
         <div style="opacity: 0;" id="right">
             <ul class="story__img--list">
                 <li class="story__img--item">
@@ -134,7 +137,7 @@
             </div>
             <a href="#" class="btn btn-orange">Our Recipe</a>
         </div>
-
+        </div>
     </section>
     <section class="story-background">
         <div class="story-background__img"></div>
@@ -272,7 +275,7 @@
             <a href="#"><img src="./resources/img/logo-vietnam-airlines.png" alt=""></a>
         </div>
     </section>
-
+</div>
     <div class="wrapper">
         <footer class="footer">
             <ul class="footer__list">
@@ -318,14 +321,13 @@
                 </li>
             </ul>
         </footer>
-        
-        <script src="https://code.jquery.com/jquery-3.5.1.js"
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
             integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
             </script>
-            <script src="resources/js/script.js"></script>
-            <script src="/vendor/js/jquery.waypoints.js"></script>
-            <script src="/vendor/js/jquery.waypoints.min.js"></script>
-    </div>
+        <script src="resources/js/script.js"></script>
+        <script src="/vendor/js/jquery.waypoints.js"></script>
+        <script src="/vendor/js/jquery.waypoints.min.js"></script>
 </body>
 
 </html>

@@ -11,7 +11,8 @@ html{
     color: #5a5a5a;
     background-color: #ffffff;
     text-rendering: optimizeLegibility; 
-    scroll-behavior: smooth;   
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 img {
@@ -20,7 +21,7 @@ img {
 }
 
 label {
-    font-size: 10rem;
+    font-size: 8rem;
     font-family: 'Tangerine', cursive;
     color: #f5761a;
 }
@@ -89,7 +90,7 @@ h1 {
 @keyframes moveInLeft {
     0% {
       opacity: 0;
-      transform: translateX(-3rem); }
+      transform: translateX(-10rem); }
     80% {
       transform: translateX(1rem); }
     100% {
@@ -100,7 +101,7 @@ h1 {
 @keyframes moveInRight {
     0% {
       opacity: 0;
-      transform: translateX(3rem); }
+      transform: translateX(10rem); }
     80% {
       transform: translateX(-1rem); }
     100% {
@@ -115,4 +116,25 @@ h1 {
     100% {
       opacity: 1;
       transform: translateY(0); } 
+}
+
+@keyframes bound {
+    0% {
+        transform: scale(5,5);
+        // transform: scale3d(.25);
+    }
+    100% {
+        
+        transform: scale(-50%, -50%);
+        // transform: scale3d(1);
+    }
+}
+.animationRight {
+    animation: moveInRight 1s ease-out;
+}
+.animationLeft {
+    animation: moveInLeft 1s ease-out;
+}
+.bound {
+    animation: bound 1s ease-out; 
 }
