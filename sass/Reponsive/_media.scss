@@ -1,0 +1,223 @@
+@media screen and (max-width: 1023px) {
+    h3 {
+        font-size: 3rem;
+    }
+    label {
+        font-size: 5rem;
+    }
+    .header{
+        &__inner{
+            width: 90%;
+        }
+        &__menu-item{
+            margin-left: 3rem;
+            font-size: 1.6rem;
+        }
+    }
+    .banner {
+        margin-bottom: 30rem;
+        &-primary--sub{
+            font-size: 3.6rem;
+        }
+        h2{
+            margin-top: -7rem;
+        }
+    }
+    .btn {
+        font-size: 1.4rem;
+        &:link,
+        &:visited{
+            padding: 1.2rem 2.2rem;
+        }
+        &-animated {
+            font-size: 2.2rem;
+        }
+    }
+    .text-box {
+        transform: translate(-50%, 280%);
+    }
+
+    .begin {
+        &__item {
+            width: calc(33.3% - 2rem);
+        }
+        &__caption {
+            font-size: 2.2rem;
+        }
+        &__img {
+            height: 15rem;
+            border-radius: 3rem;
+        }
+    }
+    .overlay {
+        border-radius: 3rem;
+    }
+
+    .story {
+        font-size: 1.2rem;
+        &__img {
+            &--image {
+                height: 35vh;
+            }
+            &--list {
+                padding: 4rem;
+            }
+        }
+        &-background {
+            &__caption {
+                font-size: 1.8rem;
+            }
+            &__img {
+                height: 20vh;
+            }
+        }
+    }
+
+    .menu{
+        padding-bottom: 1rem;
+        &__image {
+            width: 27%;
+        }
+        &__description{
+            &--list {
+                h5 {
+                    font-size: 1.4rem;
+                    letter-spacing: 1px;
+                    margin-bottom: 6px;
+                }
+            }
+            &--list p.price {
+                font-size: 1.4rem;
+            }
+            &--content {
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .partner {
+        padding-top: 6rem;
+        padding-bottom: 1rem;
+        &__img {
+            width: 75%;
+            margin-top: 1rem;
+            img {
+                width: 10rem;
+            }
+        }
+    }
+    h4 {
+        font-size: 2rem;
+        padding-bottom: 15px;
+    }
+    .fa-angle-double-up {
+        font-size: 1.2rem;
+    }
+    .footer {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        padding: 4rem;
+        &__logo {
+            font-size: 2rem;
+        }
+        &__item {
+            width: calc(28.3% - 9rem);
+        }
+        &__end {
+            font-size: 1.2rem;
+        }
+        &__social {
+            letter-spacing: 4px;
+            &--icon{
+                letter-spacing: 0rem;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .header {
+        &__menu-item {
+            display: none;
+        }
+    }
+    .btn {
+        &-animated {
+            font-size: 1.4rem;
+        }
+        &:link,
+        &:visited{
+            padding: 1.2rem 2.2rem;
+        }
+    }
+    .text-box {
+        transform: translate(-50%, 280%);
+    }
+    .banner {
+        &-primary {
+            &--main{
+                font-size: 3.8rem;
+                padding-bottom: 10px;
+            }
+            &--sub {
+                font-size: 2.4rem;
+            }
+        }
+        h2{
+            margin-top: -9rem;
+        }
+    }
+}
+@media screen and (max-width: 479px) {
+    .header {
+        padding-top: 2rem;
+        padding-bottom: 5rem;
+        &__inner{
+            margin-left: 5px;
+        }
+    }
+    .head{
+        padding-bottom: 2rem;
+    }
+    .logo {
+        font-size: 2.5rem;
+    }
+
+    .banner {
+        &-primary {
+            &--main{
+                font-size: 2.8rem;
+                padding-bottom: 5px;
+            }
+            &--sub {
+                font-size: 1.4rem;
+            }
+        }
+        h2{
+            margin-top: -10rem;
+        }
+    }
+    .btn {
+        &:link,
+        &:visited{
+            padding: 1rem 2rem;
+        }
+        &-animated {
+            font-size: 1rem;
+        }
+    }
+    .text-box {
+        transform: translate(-50%, 300%);
+    }
+}
+@media screen and (max-width: 319px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+    .header{
+        &__inner{
+            width: 90%;
+        }
+    }
+    
+}

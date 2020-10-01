@@ -3,6 +3,7 @@
 
 a {
     text-decoration: none;
+    color: black;
     &:hover {
         text-decoration: none;
         color: black;
@@ -383,6 +384,77 @@ a {
 
     
   }
+.order {
+    background-color:  #ececec;
+    font-size: 1.6rem;
+    width: 95%;
+    margin: 0 auto;
+    height: 100%;
+    display: block;
+    padding-top: 6rem;
+    text-align: center;
+    padding-bottom: 4rem;
+    label {
+        padding-top: 3rem;
+        font-size: 5rem;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid #ffa836;
+    }
+    &-wrapper {
+        width: 75%;
+        display: inline-block;
+        margin-bottom: 2rem;
+        box-shadow: 0 .5rem 2rem rgba($color: #000000, $alpha: .2);
+    }
+    &__description {
+        line-height: 1.6rem;
+        text-align: left;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 1.8rem;
+    }
+    &__right {
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+        border-right: 1px solid rgba($color: #d0d0d0, $alpha: 0.8) ;
+    }
+    &__left {
+        border-top: 1px solid black;
+        border-left: 1px solid rgba($color: #d0d0d0, $alpha: 0.8);
+        .row{
+            padding-top: 3rem;
+        }
+    }
+    &__my{
+        &-order {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem;
+            border-bottom: 1px solid black;
+        }
+        &-pack {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem;
+            border-top: 3px solid black;
+            margin-top: 2rem;
+        }
+    }
+    &__pack {
+        i{
+            background-image: linear-gradient(to right,#ffa836, #e26310);
+            color: transparent;
+            font-size: 8rem;
+            margin-bottom: 1.8rem;
+            -webkit-background-clip: text;
+        }
+        &--item {
+            padding-top: 4rem;
+        }
+    }
+}
 .contact {
     background-color:  #ececec;
     font-size: 2rem;
@@ -559,7 +631,7 @@ a {
     }
     &__logo {
         color: white;
-        font-style: 3rem;
+        font-size: 3rem;
     }
     &__about a {
         color: white;
@@ -592,5 +664,6 @@ a {
     
 }
 
+@import './Reponsive/media'
 
 
