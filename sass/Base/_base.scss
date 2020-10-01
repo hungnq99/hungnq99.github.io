@@ -25,6 +25,12 @@ label {
     font-family: 'Tangerine', cursive;
     color: #f5761a;
 }
+h2 {
+    text-align: left;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    margin-top: 3rem;
+}
 h3 {
     text-transform: uppercase;
     font-weight: 700;    
@@ -49,12 +55,13 @@ h4 {
 .width-100 {
     width: 100%;
 }
-
-.col-md-6 {
-    width: 50%;
-    float: left;
+.col-md-4 {
+    margin-bottom: 3rem;
 }
-
+.col-md-12 {
+    z-index: 1;
+    text-align: center;
+}
 .fa-angle-double-up {
     font-size: 1.8rem;
 }

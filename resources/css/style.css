@@ -26,6 +26,13 @@ label {
   color: #f5761a;
 }
 
+h2 {
+  text-align: left;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  margin-top: 3rem;
+}
+
 h3 {
   text-transform: uppercase;
   font-weight: 700;
@@ -53,9 +60,13 @@ h4 {
   width: 100%;
 }
 
-.col-md-6 {
-  width: 50%;
-  float: left;
+.col-md-4 {
+  margin-bottom: 3rem;
+}
+
+.col-md-12 {
+  z-index: 1;
+  text-align: center;
 }
 
 .fa-angle-double-up {
@@ -164,11 +175,6 @@ a:hover {
   margin: 0 auto;
 }
 
-.wrapperr {
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
 .container {
   margin: 0 auto;
   max-width: 1210px;
@@ -201,7 +207,7 @@ a:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 50%);
+  transform: translate(-50%, 225%);
   text-align: center;
 }
 
@@ -283,12 +289,25 @@ a:hover {
 }
 
 .background {
+  position: relative;
   width: 95%;
   margin: 0 auto;
+  margin-bottom: 10rem;
+}
+.background .background__image {
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-attachment: scroll;
+  background-color: transparent;
+  background-image: inherit;
   background-size: cover;
+  z-index: 0;
   background-position: center;
-  height: 70vh;
-  text-align: center;
+  width: 100%;
+  height: 125%;
 }
 .background label {
   padding-top: 12rem;
@@ -316,14 +335,28 @@ a:hover {
 }
 
 .banner {
-  background-image: linear-gradient(rgba(226, 99, 16, 0.6), rgba(248, 212, 150, 0.6)), url(/resources/img/carrot-cake-Recipe-new.jpg);
+  position: relative;
   width: 95%;
   margin: 0 auto;
+  margin-bottom: 34rem;
+}
+.banner .banner__image {
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-attachment: scroll;
+  background-color: transparent;
+  background-image: inherit;
   background-size: cover;
+  z-index: 0;
   background-position: center;
-  position: relative;
-  margin-bottom: 6rem;
-  height: 80vh;
+  width: 100%;
+  height: 180%;
+}
+.banner h2 {
+  margin-top: 0;
 }
 .banner-primary {
   color: #fff;
@@ -497,15 +530,75 @@ a:hover {
   text-align: center;
 }
 
+.contact {
+  background-color: #ececec;
+  font-size: 2rem;
+  width: 95%;
+  margin: 0 auto;
+  height: 100%;
+  display: block;
+  padding-top: 6rem;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.form {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.form-text {
+  width: 100%;
+  height: 55px;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-bottom: 20px;
+  color: #656565;
+  border: 2px solid #454545;
+  background-color: transparent;
+  font-size: 14px;
+  float: left;
+}
+.form-comment {
+  height: 212px;
+  margin-bottom: 20px;
+  width: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #656565;
+  border: 2px solid #454545;
+  background-color: transparent;
+  font-size: 14px;
+  float: left;
+}
+
+.special {
+  background-color: #ececec;
+  font-size: 2rem;
+  width: 95%;
+  margin: 0 auto;
+  height: 100%;
+  display: block;
+  padding-top: 7rem;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+.special img {
+  margin: 0 auto;
+  width: 80%;
+}
+
 .menu {
   background-color: #ececec;
   font-size: 2rem;
   width: 95%;
   margin: 0 auto;
-  height: 100vh;
+  height: 100%;
   display: block;
-  padding-top: 9rem;
+  padding-top: 7rem;
   text-align: center;
+  padding-bottom: 4rem;
 }
 .menu__image {
   float: left;
@@ -547,6 +640,28 @@ a:hover {
   clear: both;
   width: 100%;
 }
+.menu-wrapper {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.menu-section__title {
+  font-size: 28px;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 50px;
+  margin-right: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+.menu-section__title::after {
+  position: absolute;
+  content: "";
+  background-color: #E67E22;
+  height: 3px;
+  width: 50px;
+  bottom: -1px;
+  left: 0;
+}
 
 .partner {
   text-align: center;
@@ -570,8 +685,9 @@ a:hover {
   background-color: #191919;
   width: 95%;
   margin: 0 auto;
-  height: 63vh;
-  padding: 10rem;
+  height: 100%;
+  padding: 5rem;
+  padding-bottom: 3rem;
   font-size: 1.8rem;
   color: white;
   line-height: 3rem;
@@ -597,7 +713,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 2rem;
+  padding-top: 3rem;
   text-align: left;
   font-size: 1.5rem;
 }
