@@ -13,7 +13,8 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fruktur&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <!-- <link rel="stylesheet" href="vendor/css/bootstrap.css"> -->
     <link rel="stylesheet" type="text/css" href="vendor/css/bootstrap.min.css">
     <link href="vendor/css/all.css" rel="stylesheet">
@@ -47,6 +48,9 @@
                         </li>
                         <li class="header__menu-item">
                             <a href="contact.html" class="header__menu-link">Contact</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a  id="btnLogin" class="btn-orange btn-login header__menu-link">Login</a>
                         </li>
                     </ul>
                 </div>
@@ -337,6 +341,45 @@
             </li>
         </ul>
     </footer>
+    <div class="limiter" id="login">
+        <div class="container-login100" id="container-login100">
+            <div class="wrap-login100">
+                <form class="login100-form">
+                    <span class="login100-form-title">
+                        Welcome
+                    </span>
+                    <div class="wrap-input100">
+                        <input class="input100" type="text" name="username">
+                        <span class="focus-input100" data-placeholder="Username"></span>
+                    </div>
+
+                    <div class="wrap-input100">
+                        <input class="input100" type="password" name="pass">
+                        <span class="focus-input100" data-placeholder="Password"></span>
+                    </div>
+
+                    <div class="container-login100-form-btn">
+                        <div class="wrap-login100-form-btn">
+                            <div class="login100-form-bgbtn"></div>
+                            <button class="login100-form-btn">
+                                Login
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="text-center p-t-115">
+                        <span class="txt1">
+                            Don’t have an account?
+                        </span>
+
+                        <a class="txt2" href="#">
+                            Sign Up
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
         </script>
