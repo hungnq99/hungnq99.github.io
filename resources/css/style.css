@@ -301,6 +301,8 @@ a:hover {
 .btn-login {
   padding: 1.2rem 1.8rem;
   border-radius: 0.8rem;
+  font-size: 22px;
+  cursor: pointer;
 }
 .btn-login::after {
   content: "";
@@ -863,7 +865,19 @@ a:hover {
   color: #f5761a;
 }
 
-.limiter {
+.login {
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.signup {
   width: 100%;
   margin: 0 auto;
   position: fixed;
@@ -909,6 +923,17 @@ a:hover {
   overflow: hidden;
   margin: 0 auto;
 }
+.wrap-login100-form-signup {
+  width: 75%;
+}
+
+.wrap-signup100 {
+  width: 415px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 77px 15px 33px 15px;
+}
 
 .txt1 {
   font-family: "Ubuntu", sans-serif;
@@ -922,6 +947,7 @@ a:hover {
   font-size: 13px;
   color: #333333;
   line-height: 1.5;
+  cursor: pointer;
 }
 
 .login100-form {
@@ -935,6 +961,9 @@ a:hover {
   line-height: 1.2;
   text-align: center;
   margin-bottom: 5rem;
+}
+.login100-form-title__signup {
+  margin-bottom: 2rem;
 }
 .login100-form-title i {
   font-size: 60px;

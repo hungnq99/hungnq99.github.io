@@ -104,12 +104,35 @@ $('#btnLogin').click(function(event){
     document.getElementById('login').style.opacity = '1';
     event.stopPropagation();
 });
+$('#signupRedirect').click(function(event){
+    document.getElementById('signup').style.visibility = 'visible';
+    document.getElementById('signup').style.opacity = '1';
+    document.getElementById('login').style.visibility = 'hidden';
+    document.getElementById('login').style.opacity = '0';
+    event.stopPropagation();
+});
+$('#loginRedirect').click(function(event){
+    document.getElementById('signup').style.visibility = 'hidden';
+    document.getElementById('signup').style.opacity = '0';
+    document.getElementById('login').style.visibility = 'visible';
+    document.getElementById('login').style.opacity = '1';
+    event.stopPropagation();
+});
 $(document).click(function (e) {
     var container = $(".wrap-login100");
 
     if (!container.is(e.target) && container.has(e.target).length === 0) {
         document.getElementById('login').style.visibility = 'hidden';
         document.getElementById('login').style.opacity = '0';
+    }
+});
+
+$(document).click(function (e) {
+    var container = $(".wrap-signup100");
+
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+        document.getElementById('signup').style.visibility = 'hidden';
+        document.getElementById('signup').style.opacity = '0';
     }
 });
 

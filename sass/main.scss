@@ -92,18 +92,20 @@ a {
     &-login {
         padding: 1.2rem 1.8rem;
         border-radius: .8rem;
+        font-size: 22px;
+        cursor: pointer;
         &::after {
             content: "";
-        display: block;
-        position: absolute;
-        top: 5px;
-        left: 5px;
-        bottom: 5px;
-        right: 5px;
-        border-radius: .8rem;
-        border: 2px solid white;
-        z-index: 2;
-        transition: all .4s;
+            display: block;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            bottom: 5px;
+            right: 5px;
+            border-radius: .8rem;
+            border: 2px solid white;
+            z-index: 2;
+            transition: all .4s;
         }
     }
     &-orange{
@@ -682,7 +684,7 @@ a {
     
 }
 
-.limiter {
+.login {
     width: 100%;
     margin: 0 auto;
     position: fixed;
@@ -694,7 +696,17 @@ a {
     visibility: hidden;
   }
 
-  
+.signup {
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+}
 
   .container-login100 {
     width: 100%;  
@@ -709,8 +721,11 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    &-form-btn {
-        margin-bottom: 12rem;
+    &-form {
+        &-btn{
+            margin-bottom: 12rem;
+        }
+        
     }
   }
   
@@ -728,7 +743,18 @@ a {
         border-radius: 25px;
         overflow: hidden;
         margin: 0 auto;
-      }
+    }
+    &-form-signup{
+        width: 75%;
+        
+    }
+  }
+  .wrap-signup100 {
+    width: 415px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 77px 15px 33px 15px;
   }
   .txt1 {
     font-family: 'Ubuntu', sans-serif;
@@ -742,6 +768,7 @@ a {
     font-size: 13px;
     color: #333333;
     line-height: 1.5;
+    cursor: pointer;
   }
   .login100-form {
     width: 100%;
@@ -753,6 +780,9 @@ a {
         line-height: 1.2;
         text-align: center;
         margin-bottom: 5rem;
+        &__signup {
+            margin-bottom: 2rem;
+        }
     }
     &-title i {
         font-size: 60px;
