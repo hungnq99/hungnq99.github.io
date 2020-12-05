@@ -431,18 +431,21 @@ a:hover {
   display: block;
   font-size: 6.8rem;
   font-weight: 700;
-  letter-spacing: 1.5rem;
+  letter-spacing: 1rem;
   padding-bottom: 18px;
-  font-family: "Sansita Swashed", cursive;
+  font-family: "Oswald", sans-serif;
   animation: moveInLeft 1s ease-out;
 }
 .banner-primary--sub {
   display: block;
-  font-family: "Tangerine", cursive;
+  font-family: "Oswald", sans-serif;
   font-size: 4rem;
   font-weight: 400;
   letter-spacing: 0.4rem;
   animation: moveInRight 1s ease-in;
+}
+.banner-primary__admin {
+  margin-left: 18rem;
 }
 
 .begin__list {
@@ -1065,6 +1068,169 @@ a:hover {
 
 .wrap-login100-form-btn:hover .login100-form-bgbtn {
   left: 0;
+}
+
+.left-side-bar {
+  width: 240px;
+  z-index: 9999;
+}
+
+.sidebar-menu {
+  min-width: 205px;
+  padding: 20px;
+  background-image: linear-gradient(40deg, #f6ae66, #f36156);
+  color: #fff;
+  position: fixed;
+  transition: all 0.3s;
+  z-index: 999;
+  height: 100%;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+  color: #fff;
+  transition: all 0.15s ease-in;
+}
+
+.sidebar-item:hover {
+  color: white;
+  background-color: #ffa836;
+}
+
+.sidebar-icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.sidebar-text {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.all--content {
+  margin-left: 205px;
+  transition: all 0.3s;
+}
+
+.admin__content {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(../img/isabela-kronemberger-LxQ0BB10KbQ-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.breadcome-list {
+  padding: 20px;
+  background: #f36156;
+  margin: 20px 0px;
+}
+
+.breadcomb-wp {
+  display: flex;
+}
+
+.breadcomb-icon i {
+  font-size: 20px;
+  color: #fff;
+  padding: 15px;
+  position: relative;
+  border-radius: 5px;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+  display: block;
+  border-left: 1px solid #fff;
+}
+
+.breadcomb-ctn {
+  margin-left: 20px;
+}
+.breadcomb-ctn h2 {
+  font-size: 20px;
+  color: #fff;
+  margin-top: 10px;
+}
+.breadcomb-ctn p {
+  font-size: 14px;
+  color: #fff;
+  margin: 0px;
+}
+
+.mg-b-30 {
+  margin-bottom: 30px;
+}
+
+.product-status-wrap {
+  padding: 20px;
+  background-image: linear-gradient(40deg, rgba(246, 174, 102, 0.85), rgba(243, 97, 86, 0.9));
+}
+.product-status-wrap h4 {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 5px;
+  text-align: left;
+  text-transform: none;
+}
+.product-status-wrap table {
+  width: 100%;
+}
+.product-status-wrap table th {
+  padding: 20px 5px;
+  vertical-align: top;
+  border-top: 1px solid #f36156;
+}
+.product-status-wrap table th {
+  vertical-align: bottom;
+  border-bottom: 3px solid #f36156;
+  color: #fff;
+}
+.product-status-wrap table td {
+  padding: 9px 7px;
+  border-top: 1px solid #f36156;
+  color: #fff;
+  font-size: 18px;
+  vertical-align: middle;
+}
+.product-status-wrap th, .product-status-wrap td {
+  padding: 10px;
+  text-align: left;
+  font-size: 20px;
+}
+.product-status-wrap img {
+  width: 60px;
+}
+
+.add-product a {
+  float: right;
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  background: #f36156;
+  padding: 6px 20px;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.setting-icon {
+  display: inline-block;
+  margin-right: 5px;
+  color: white;
+  padding: 5px 10px;
+  background: #f36156;
+  font-size: 12px;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+.setting-icon:hover {
+  color: #f8d496;
+}
+
+.footer-copyright-area {
+  background: #f6ae66;
+  padding: 20px 0px;
+  text-align: center;
 }
 
 @media screen and (max-width: 1023px) {
